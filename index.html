@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Downloader</title>
+    <meta name="description" content="A simple, fast URL downloader tool.">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glow-container"></div>
+    <main class="download-container">
+        <header>
+            <h1 class="glitch" data-text="Link Downloader">Link Downloader</h1>
+            <p class="subtitle">Secure // Fast // Direct</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-wrapper">
+                <input type="url" id="urlInput" placeholder="Paste your URL here..." autocomplete="off">
+                <div class="input-border"></div>
+            </div>
+            <button id="downloadBtn" class="cyber-button">
+                <span class="btn-text">Download</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </section>
+
+        <section class="status-section">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span id="statusText">System Ready. Awaiting Input.</span>
+            </div>
+            <div id="progressBarContainer" class="progress-container hidden">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
